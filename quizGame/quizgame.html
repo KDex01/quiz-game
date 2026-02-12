@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="quizgame.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen active" id="startScreen">
+        <h1>Quiz Time</h1>
+        <p>test your knowlage with these fun questions!</p>
+        <button id="startButton">Start Quiz</button>
+      </div>
+
+      <div class="screen" id="quizScreen">
+        <div class="quizHeader">
+          <h2 id="questionText">questions goes here</h2>
+          <div class="quizInfo">
+            <p>
+              Question <span id="currentQuestionSpan">1 </span>of
+              <span id="totalQuestoin">5</span>
+            </p>
+            <p>Score: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div id="answerContainer" class="answerContainer">
+          <!--These part will be fill later in JS at some point-->
+        </div>
+
+        <div class="progressBar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      <div id="resultScreen" class="screen">
+        <h1>Quiz Result</h1>
+        <div id="resultInfo">
+          <p>
+            Your scored <span id="finalScore">0</span> out of
+            <span id="maxScore">5</span>
+          </p>
+          <div id="resultMessege">Good!</div>
+        </div>
+
+        <button id="restartBtn">Quiz Restart</button>
+      </div>
+    </div>
+    <script src="quizgame.js"></script>
+  </body>
+</html>
